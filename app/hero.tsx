@@ -8,7 +8,7 @@ export default function Hero() {
     //     <h2 className="text-xl text-stone-200">Frontend Engineer</h2>
     //   </div>
     // </main>
-    <main className="h-screen w-screen bg-green-950">
+    <main className="h-screen w-screen bg-gradient-to-t from-green-900 to-green-950">
       <PixelName />
       {/* <div className="flex h-full w-full flex-col items-center justify-center font-mono text-5xl font-extrabold lowercase text-white">
         <div className="">Gregory</div>
