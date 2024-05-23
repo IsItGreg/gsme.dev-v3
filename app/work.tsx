@@ -2,14 +2,14 @@ import { Gi3dHammer, GiBookPile, GiPaperFrog } from "react-icons/gi";
 
 export default function Work() {
   return (
-    <div className="bg-stone-50 py-32">
+    <div className="bg-stone-50 px-10 py-32 sm:px-20">
       <div className="flex flex-col items-center gap-2">
         <div className="text-center text-4xl font-bold">
           Where I've been working
         </div>
         <div className="h-1 w-56 rounded-sm bg-cyan-600"></div>
       </div>
-      <div className="mx-auto mt-16 flex w-auto max-w-[49rem] flex-row flex-wrap justify-center gap-x-4 gap-y-6 md:justify-between">
+      <div className="mx-auto mt-16 grid w-auto max-w-3xl gap-x-4 gap-y-6 sm:grid-cols-2">
         <Card
           company="Redis"
           role="Frontend Engineer"
@@ -89,7 +89,7 @@ function Card({
       href={url}
       target="_blank"
       rel="noreferrer"
-      className={`block w-96 rounded-xl border md:even:-mb-20 md:even:mt-20 ${color.border} bg-stone-50 p-4 text-black ${color.hoverBg} ${color.hoverText} group transition-[background-color,color,transform,shadow] duration-300 ease-in-out hover:scale-105 hover:shadow-lg`}
+      className={`block w-full rounded-xl border md:even:-mb-20 md:even:mt-20 ${color.border} bg-stone-50 p-4 text-black ${color.hoverBg} ${color.hoverText} group transition-[background-color,color,transform,shadow] duration-300 ease-in-out hover:scale-105 hover:shadow-lg`}
     >
       <h1 className="flex flex-row justify-between text-2xl">
         <span className="font-medium">{company}</span>
