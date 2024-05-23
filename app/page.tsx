@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Hero from "./hero";
-import Timeline from "./timeline";
 import Navbar from "./navbar";
 import About from "./about";
 import Work from "./work";
+import Projects from "./projects";
+import Contact from "./contact";
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <Navbar />
       <About />
       <Work />
-      <Timeline />
-      <div className="h-[3000px]"></div>
+      <Projects />
+      <Contact />
     </>
   );
 }

@@ -55,7 +55,6 @@ export default function Work() {
           url="https://rivethealth.com"
           icon={<GiPaperFrog />}
         />
-        <div></div>
       </div>
     </div>
   );
