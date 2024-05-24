@@ -60,35 +60,55 @@ export default function PixelName() {
   const gridInRef = useSpringRef();
   const gridOutRef = useSpringRef();
 
-  const horizontalLines = new Array(GRID_HEIGHT + 1).fill(null).map((_, i) => ({
-    inSpring: useSpring({
+  const [horizontalLinesIn] = useSprings(GRID_HEIGHT + 1, (i) => {
+    return {
       from: { x2: 0 },
       to: { x2: MAX_WIDTH },
       delay: i * 100,
       ref: gridInRef,
-    }),
-    outSpring: useSpring({
+    };
+  });
+
+  const [horizontalLinesOut] = useSprings(GRID_HEIGHT + 1, (i) => {
+    return {
       from: { x1: 0 },
       to: { x1: MAX_WIDTH },
       delay: i * 100,
       ref: gridOutRef,
-    }),
-  }));
+    };
+  });
 
-  const verticalLines = new Array(GRID_WIDTH + 1).fill(null).map((_, i) => ({
-    inSpring: useSpring({
+  const horizontalLines = horizontalLinesIn.map((_, i) => {
+    return {
+      inSpring: horizontalLinesIn[i],
+      outSpring: horizontalLinesOut[i],
+    };
+  });
+
+  const [verticalLinesIn] = useSprings(GRID_WIDTH + 1, (i) => {
+    return {
       from: { y2: 0 },
       to: { y2: MAX_HEIGHT },
-      delay: i * 50,
+      delay: i * 100,
       ref: gridInRef,
-    }),
-    outSpring: useSpring({
+    };
+  });
+
+  const [verticalLinesOut] = useSprings(GRID_WIDTH + 1, (i) => {
+    return {
       from: { y1: 0 },
       to: { y1: MAX_HEIGHT },
-      delay: i * 50,
+      delay: i * 100,
       ref: gridOutRef,
-    }),
-  }));
+    };
+  });
+
+  const verticalLines = verticalLinesIn.map((_, i) => {
+    return {
+      inSpring: verticalLinesIn[i],
+      outSpring: verticalLinesOut[i],
+    };
+  });
 
   const firstNameRef = useSpringRef();
   const [firstNameSprings] = useSprings(firstNameCoords.length, (i) => {
