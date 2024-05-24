@@ -123,7 +123,7 @@ export default function PixelName() {
   );
 
   return (
-    <div className="absolute left-1/4 top-1/4 h-1/2 w-1/2 text-stone-50">
+    <div className="mx-auto w-3/4 max-w-3xl pt-52 text-stone-50 md:w-1/2">
       <svg
         viewBox={`0 0 ${MAX_WIDTH} ${MAX_HEIGHT}`}
         shapeRendering="crispEdges"

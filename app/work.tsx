@@ -2,7 +2,7 @@ import { Gi3dHammer, GiBookPile, GiPaperFrog } from "react-icons/gi";
 
 export default function Work() {
   return (
-    <div className="bg-stone-50 px-10 py-32 sm:px-20">
+    <div id="work" className="bg-stone-50 px-10 py-32 sm:px-20">
       <div className="flex flex-col items-center gap-2">
         <div className="text-center text-4xl font-bold">
           Where I've been working

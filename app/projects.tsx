@@ -2,7 +2,7 @@ import { GiDragonOrb, GiMaze, GiMonaLisa, GiTomato } from "react-icons/gi";
 
 export default function Projects() {
   return (
-    <div className="bg-stone-100 px-10 py-32 sm:px-20">
+    <div id="projects" className="bg-stone-100 px-10 py-32 sm:px-20">
       <div className="flex flex-col items-center gap-2">
         <div className="text-center text-4xl font-bold">
           Some stuff I've made
