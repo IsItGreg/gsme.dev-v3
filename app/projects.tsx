@@ -2,14 +2,14 @@ import { GiDragonOrb, GiMaze, GiMonaLisa, GiTomato } from "react-icons/gi";
 
 export default function Projects() {
   return (
-    <div id="projects" className="bg-stone-100 px-10 py-32 sm:px-20">
+    <div id="projects" className="bg-stone-100 px-5 py-32 sm:px-20">
       <div className="flex flex-col items-center gap-2">
-        <div className="text-center text-4xl font-bold">
+        <div className="text-balance text-center text-4xl font-bold">
           Some stuff I've made
         </div>
-        <div className="h-1 w-56 rounded-sm bg-cyan-600"></div>
+        <div className="h-1 w-40 rounded-sm bg-cyan-600 sm:w-56"></div>
       </div>
-      <div className="mx-auto mt-16 flex max-w-3xl flex-col gap-4">
+      <div className="mx-auto mt-20 flex max-w-3xl flex-col gap-4">
         <Card
           title="Flaurd"
           description="Web app designed to make downloadable and 3D printable floor plans. Still has a bunch of bugs I need to fix, but it works."

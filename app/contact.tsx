@@ -2,12 +2,12 @@ import { GiMountedKnight, GiOstrich, GiWarpPipe } from "react-icons/gi";
 
 export default function Contact() {
   return (
-    <div id="contact" className="relative bg-stone-50 py-32">
+    <div id="contact" className="relative bg-stone-50 py-32 pb-40">
       <div className="flex flex-col items-center gap-2">
         <div className="text-center text-4xl font-bold">Want to reach me?</div>
         <div className="h-1 w-56 rounded-sm bg-cyan-600"></div>
       </div>
-      <div className="flex flex-row items-center justify-center gap-8 pt-16 text-lg">
+      <div className="flex flex-row items-center justify-center gap-8 pt-20 text-lg">
         <a
           href="https://www.linkedin.com/in/greg-smelkov/"
           target="_blank"
@@ -25,10 +25,10 @@ export default function Contact() {
           <span>Email</span>
         </a>
       </div>
-      <div className="absolute bottom-0 right-20">
+      <div className="absolute bottom-0 right-16 sm:right-32">
         <a
           href="#"
-          className="mx-20 block text-green-700 opacity-25 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-100"
+          className="block text-green-700 opacity-25 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-100"
         >
           <GiWarpPipe className="h-20 w-20" />
         </a>

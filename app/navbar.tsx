@@ -30,7 +30,7 @@ export default function Navbar() {
           />
         ))}
       </svg>
-      <div className="flex flex-row items-center gap-8 pr-4">
+      <div className="flex flex-row items-center gap-2 pr-0.5 sm:gap-8 sm:pr-4">
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
