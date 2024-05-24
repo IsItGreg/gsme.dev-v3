@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Hero from "./hero";
-import Navbar from "./navbar";
-import About from "./about";
-import Work from "./work";
-import Projects from "./projects";
-import Contact from "./contact";
+import Hero from "./components/hero";
+import Navbar from "./components/navbar";
+import About from "./components/about";
+import Work from "./components/work";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
