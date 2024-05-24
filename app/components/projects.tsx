@@ -19,11 +19,11 @@ export default function Projects() {
             linkHover: "hover:text-blue-700",
           }}
           links={[
+            { url: "https://floor.gsme.dev/", text: "View demo" },
             {
               url: "https://github.com/IsItGreg/floorplaner",
               text: "View code",
             },
-            { url: "https://floor.gsme.dev/", text: "View demo" },
           ]}
         />
         <Card
@@ -36,16 +36,16 @@ export default function Projects() {
           }}
           links={[
             {
-              url: "https://github.com/IsItGreg/paste-a-sauce",
-              text: "View code",
-            },
-            {
               url: "https://chromewebstore.google.com/detail/paste-a-sauce/cgadjcfhfbfbblhlfoejhokcmbbkcbpa",
               text: "As a Chrome extension",
             },
             {
               url: "https://addons.mozilla.org/en-GB/firefox/addon/paste-a-sauce/",
               text: "As a Firefox add-on",
+            },
+            {
+              url: "https://github.com/IsItGreg/paste-a-sauce",
+              text: "View code",
             },
           ]}
         />
@@ -58,11 +58,11 @@ export default function Projects() {
             linkHover: "hover:text-green-700",
           }}
           links={[
+            { url: "https://photo.gsme.dev/", text: "View portfolio" },
             {
               url: "https://github.com/IsItGreg/PhotoPortfolio",
               text: "View code",
             },
-            { url: "https://photo.gsme.dev/", text: "View portfolio" },
           ]}
         />
         <Card
@@ -74,6 +74,14 @@ export default function Projects() {
             linkHover: "hover:text-yellow-700",
           }}
           links={[
+            {
+              url: "#",
+              text: "This site!",
+            },
+            {
+              url: "https://v1.gsme.dev/",
+              text: "View v1",
+            },
             {
               url: "https://github.com/IsItGreg/gsme.dev-v3",
               text: "View code",
