@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <div className="sticky top-0 z-50 flex h-12 flex-row justify-between bg-green-950 px-2 py-2 text-white shadow-xl">
-      <svg viewBox="0 0 140 40">
+      <svg viewBox="0 0 140 40" className="w-28">
         {shortNameCoords.map(([x, y], index) => (
           <rect
             x={x * 10}
