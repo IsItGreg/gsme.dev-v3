@@ -89,7 +89,7 @@ export default function PixelName() {
     return {
       from: { y2: 0 },
       to: { y2: MAX_HEIGHT },
-      delay: i * 100,
+      delay: i * 50,
       ref: gridInRef,
     };
   });
@@ -98,7 +98,7 @@ export default function PixelName() {
     return {
       from: { y1: 0 },
       to: { y1: MAX_HEIGHT },
-      delay: i * 100,
+      delay: i * 50,
       ref: gridOutRef,
     };
   });

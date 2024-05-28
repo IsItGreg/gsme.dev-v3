@@ -31,10 +31,30 @@ export default function Navbar() {
         ))}
       </svg>
       <div className="flex flex-row items-center gap-2 pr-0.5 sm:gap-8 sm:pr-4">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a
+          href="#about"
+          className="p-2 transition-all duration-300 ease-in-out hover:scale-105 hover:text-blue-200"
+        >
+          About
+        </a>
+        <a
+          href="#work"
+          className="p-2 transition-all duration-300 ease-in-out hover:scale-105 hover:text-red-200"
+        >
+          Work
+        </a>
+        <a
+          href="#projects"
+          className="p-2 transition-all duration-300 ease-in-out hover:scale-105 hover:text-green-200"
+        >
+          Projects
+        </a>
+        <a
+          href="#contact"
+          className="p-2 transition-all duration-300 ease-in-out hover:scale-105 hover:text-yellow-200"
+        >
+          Contact
+        </a>
       </div>
     </div>
   );
