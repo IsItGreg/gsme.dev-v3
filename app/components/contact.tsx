@@ -27,8 +27,12 @@ export default function Contact() {
       </div>
       <div className="absolute bottom-0 right-16 sm:right-32">
         <a
-          href="#"
+          href="/#"
           className="block text-green-700 opacity-25 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-100"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         >
           <GiWarpPipe className="h-20 w-20" />
         </a>
