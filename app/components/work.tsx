@@ -1,4 +1,4 @@
-import { Gi3dHammer, GiBookPile, GiPaperFrog } from "react-icons/gi";
+import { Gi3dHammer, GiBookPile, GiPaperFrog, GiToaster } from "react-icons/gi";
 
 export default function Work() {
   return (
@@ -10,6 +10,21 @@ export default function Work() {
         <div className="h-1 w-40 rounded-sm bg-cyan-600 sm:w-56"></div>
       </div>
       <div className="mx-auto mt-20 grid w-auto max-w-3xl gap-x-4 gap-y-6 sm:grid-cols-2">
+        <Card
+          company="Toast"
+          role="Fontend Engineer II"
+          start="Jun 2023"
+          end="Present"
+          description="Working on the Toast.org team to bring new features to restaurants with a focus on sustainability, reducing food waste, and giving back to local communities."
+          color={{
+            border: "border-orange-600",
+            hoverBg: "hover:bg-orange-600",
+            hoverText: "hover:text-white",
+            iconColor: "text-white",
+          }}
+          url="https://toast.org"
+          icon={<GiToaster className="h-10 w-10" />}
+        />
         <Card
           company="Redis"
           role="Frontend Engineer"
