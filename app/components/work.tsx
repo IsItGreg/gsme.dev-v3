@@ -13,7 +13,7 @@ export default function Work() {
         <Card
           company="Toast"
           role="Fontend Engineer II"
-          start="Jun 2023"
+          start="Jun 2024"
           end="Present"
           description="Working on the Toast.org team to bring new features to restaurants with a focus on sustainability, reducing food waste, and giving back to local communities."
           color={{
